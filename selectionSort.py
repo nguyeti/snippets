@@ -5,7 +5,7 @@
 input = [10,5,2,604,98,2]
 
 def selectionSort(input):
-   for fillslot in range(len(input)-1,0,-1):
+       for fillslot in range(len(input)-1,0,-1):
         positionOfMax=0
         for location in range(1,fillslot+1):
             if input[location]>input[positionOfMax]:
