@@ -18,3 +18,12 @@ def insertionSort(input):
 insertionSort(input)
 
 print(input)
+
+# Output
+# step: 1, array: [5, 10, 2, 604, 98, 2, 1]
+# step: 2, array: [2, 5, 10, 604, 98, 2, 1]
+# step: 3, array: [2, 5, 10, 604, 98, 2, 1]
+# step: 4, array: [2, 5, 10, 98, 604, 2, 1]
+# step: 5, array: [2, 2, 5, 10, 98, 604, 1]
+# step: 6, array: [1, 2, 2, 5, 10, 98, 604]
+# [1, 2, 2, 5, 10, 98, 604]
