@@ -9,7 +9,7 @@ def selectionSort(input):
     for i in range(len(input)):
         iMin = i
         print("iMin: {0}".format(iMin))
-        for j in range(i + 1, len(input)):
+        for j in range(iMin + 1, len(input)):
             if input[j] <= input[iMin]:
                 print("Swapping {0} and {1}".format(input[j], input[iMin]))
                 temp = input[iMin]
