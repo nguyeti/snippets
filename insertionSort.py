@@ -13,6 +13,8 @@ def insertionSort(input):
             input[position] = input[position-1]
             position = position-1
             input[position]=currentvalue
+
+        print("step: {0}, array: {1}".format(index, input))
 insertionSort(input)
 
 print(input)
