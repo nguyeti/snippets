@@ -2,8 +2,6 @@
 # avg-case: O(n²)
 # best-case: O(n)
 
-input = [1,5,2,604,98]
-
 def bubbleSort(array):
   for i in range(len(array)):
     for j in range(len(array) - 1):
@@ -15,7 +13,9 @@ def bubbleSort(array):
       print("[{0},{1}]: {2}".format(i, j, array))
   print("Sorted array: {0}".format(array))
 
-bubbleSort(input)
+if __name__ == "__main__":
+    input = [1,5,2,604,98]
+    bubbleSort(input)
 
 # Output
 # [0,0]: [1, 5, 2, 604, 98]

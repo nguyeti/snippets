@@ -2,8 +2,6 @@
 # avg-case: O(n²)
 # best-case: O(n) when the array is already sorted
 
-input = [10,5,2,604,98,2, 1]
-
 def insertionSort(input):
     for index in range(1, len(input)):
         currentvalue = input[index]
@@ -15,7 +13,10 @@ def insertionSort(input):
             input[position]=currentvalue
 
         print("step: {0}, array: {1}".format(index, input))
-insertionSort(input)
+
+if __name__ == "__main__":        
+    input = [10,5,2,604,98,2, 1]
+    insertionSort(input)
 
 print(input)
 

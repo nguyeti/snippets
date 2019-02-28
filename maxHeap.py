@@ -5,7 +5,6 @@
 # parent(i) = i // 2
 # left(i) = i * 2
 # right(i) = i * 2 + 1
-
 class MaxHeap:
 	def __init__(self, items=[]):
 		super().__init__()
@@ -63,7 +62,8 @@ class MaxHeap:
 			self.__swap(index, largest)
 			self.__bubbleDown(largest)
 
-m = MaxHeap([95, 3, 21])
-m.push(10)
-print(str(m.heap[0:len(m.heap)]))
-print(str(m.pop()))
+if __name__ == "__main__":
+	m = MaxHeap([95, 3, 21])
+	m.push(10)
+	print(str(m.heap[0:len(m.heap)]))
+	print(str(m.pop()))

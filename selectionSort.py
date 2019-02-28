@@ -2,8 +2,6 @@
 # avg-case: O(n²)
 # best-case: O(n²)
 
-input = [10,5,2,604,98,2]
-
 def selectionSort(input):
        for fillslot in range(len(input)-1,0,-1):
         positionOfMax=0
@@ -15,7 +13,10 @@ def selectionSort(input):
         input[fillslot] = input[positionOfMax]
         input[positionOfMax] = temp
         print("fillslot: {0}, array: {1}".format(fillslot, input))
-selectionSort(input)
+
+if __name__ == "__main__":
+    input = [10,5,2,604,98,2]
+    selectionSort(input)
 
 
 # Output
