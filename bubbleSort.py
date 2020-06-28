@@ -13,9 +13,21 @@ def bubbleSort(array):
       print("[{0},{1}]: {2}".format(i, j, array))
   print("Sorted array: {0}".format(array))
 
+def bubble(list_a):
+  indexing_length = len(list_a) - 1
+  sorted = False
+
+  while not sorted:
+    sorted = True
+    for i in range(0, indexing_length):
+      if list_a[i] > list_a[i+1]:
+        sorted = False
+        list_a[i], list_a[i+1] = list_a[i+1], list_a[i]
+  return list_a
+
 if __name__ == "__main__":
     input = [1,5,2,604,98]
-    bubbleSort(input)
+    print(bubble(input))
 
 # Output
 # [0,0]: [1, 5, 2, 604, 98]
