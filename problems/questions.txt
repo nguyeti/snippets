@@ -1,0 +1,4 @@
+You have a machine with 16 gb of ram and 2 32gb files. In these files, you have one word per line. How do you sort the words in each files and merge them. 
+- Do like a merge sort. split files into smaller files, sort the words. 
+- Then, once the 2 16gb are sorted. merge the 2 files word by word, comparing the word in each file in order to know which on goes first.
+- save to another file.
